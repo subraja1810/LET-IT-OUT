@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LET IT OUT</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+			</ul>
+		</div>
+	<div>
+		<p class="wayy">WRITE AWAY!!!</p>
+		<textarea name="message" placeholder="Write away !!!" rows="25" cols="10">
+        </textarea>
+  <br><br>
+  <br><br>
+  <div>
+		<form action="theposts.html" id="posts" method='POST'>
+			{% csrf_token %}
+		<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	</div>
+</header>
+</body>
+</html>
